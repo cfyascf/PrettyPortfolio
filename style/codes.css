@@ -1,0 +1,141 @@
+.codes-section {
+    background-color: #553566;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 10px;
+}
+
+.grid-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grid-title h1 {
+    color: #FAEFE6;
+    font-size: 3rem;
+    font-family: 'Unbounded', sans-serif;
+    margin-top: 70px;
+}
+
+.grid-title p {
+    color: #FAEFE6;
+    font-size: 1.5rem;
+    margin-bottom: 80px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    color: white;
+    min-height: 530px;
+}
+
+.grid div {
+    background-color: #FD883D;
+    border-radius: 40px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    width: 27%;
+    min-height: 100%;
+    padding: 60px;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.grid div:hover {
+    transform: scale(1.1);
+}
+
+.grid div img {
+    width: 20%;
+    margin-bottom: 30px;
+}
+
+.grid div h2 {
+    font-size: 1.5rem;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.grid div h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.grid div p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.grid div a {
+    font-size: 1.3rem;
+    color: #553566;
+    transition: 0.3s;
+}
+
+.grid div a:hover {
+    color: #FAEFE6;
+}
+
+@media (max-width: 768px) {
+    .codes-section {
+        padding: 80px;
+    }
+    .grid-title h1 {
+        font-size: 2.3rem;
+    }
+
+    .grid-title p {
+        font-size: 1.3rem;
+    }
+
+    .grid div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-title {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-title h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .grid-title p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .grid div {
+        padding: 35px;
+    }
+
+    .grid div h2 {
+        font-size: 1.5rem;
+    }
+
+    .grid div h3 {
+        font-size: 1.3rem;
+    }
+}
